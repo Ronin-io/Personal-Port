@@ -286,6 +286,7 @@ margin: 20px 0px 0px 90px;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    
 }
 #resumepdf {
     margin-top: 2rem;
@@ -456,7 +457,7 @@ margin: 20px 0px 0px 90px;
 /* Utility Box Structure */
 
 #contact {
-   background: oldlace;
+   background: whitesmoke;
 }
 
 #contact form {

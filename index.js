@@ -32,3 +32,22 @@ navSwitchBtn.addEventListener("click", function() {
         }
         
 })
+
+
+// tweak #tools scroll
+
+const tools = document.querySelector("#tools_link");
+
+tools.addEventListener('click', function() {
+    setTimeout(() => {
+        window.scroll(0, window.scrollY - 50)
+        
+    }, 2000);
+})
+
+
+// media queries
+
+
+let mql = window.matchMedia('(max-width: 600px)');
+document.querySelector("body").style.background = "orange !important"

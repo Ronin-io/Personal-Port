@@ -53,7 +53,17 @@ a {
     font-family: 'Franklin Gothic Medium';
 }
 
-
+/* shapes */
+.circle {
+    height: 130px;
+    width: 130px;
+    background: orange;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+}
 
 /* backrgound colors */
 .bg-primary {
@@ -97,7 +107,7 @@ a {
 }
 
 .work {
-    margin-left: 30%;
+    margin-left: 24% !important;
     margin-top: 130px;
 }
 
@@ -124,7 +134,28 @@ a {
 
 .text-center {
     text-align: center;
+    
 }
+
+#project-text {
+    position: relative;
+    top: 5vh;
+  font-size: 3.5rem;
+  margin: 0 65%;
+}
+.resume_wrapper .circle {
+    margin: 0 10% ; 
+    top: 32vh ;
+    left: 5% ; 
+}
+#resume_heading_text {
+    position: absolute;
+  top: 55px;
+  left: 10vh;
+    font-size: 3.5rem;
+   
+}
+
 .py-1  {
     padding: 1rem 0;
 }
@@ -264,6 +295,16 @@ margin: 20px 0px 0px 90px;
     
  
  }
+ #about .circle {
+    top: -30%;
+ }
+ #about #about_me_heading_text {
+   
+    position: relative;
+    top: -22vh;
+    left: 50px;
+
+ }
 
  .resume-text {
     border: 10px solid black;
@@ -334,6 +375,11 @@ margin: 20px 0px 0px 90px;
    padding: 1rem 0;
    display: flex;
 
+}
+#project .circle {
+    position: relative;
+   top: 100px;
+    left: 5%;
 }
 #projects_wrapper .projects {
     display: flex;
@@ -498,6 +544,9 @@ margin: 20px 0px 0px 90px;
 }
 
 @media (max-width: 700px) {
+    .resume_wrapper #resume_heading_text, .circle {
+        top: -30px !important;
+    }
     #main-nav {
         flex-direction: column;
        
@@ -521,3 +570,25 @@ margin: 20px 0px 0px 90px;
         font-size: 12px;
     }
 }
+
+/* media query for circle */
+@media (max-width: 1200px) {
+
+    
+    .resume_wrapper #resume_heading_text, .circle {
+        top: -30px !important;
+    }
+    .resume_wrapper #resume_heading_text {
+        position: relative;
+       top: 20% !important;
+
+    }
+    #resume {
+        position: relative;
+    }
+    #resume .work {
+        margin-left: 40% !important;
+    }
+
+}
+

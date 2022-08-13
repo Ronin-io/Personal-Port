@@ -22,12 +22,12 @@ a {
     
     
 }
-.circle {
+/* .circle {
     margin-right: 0px !important;
     margin-left: 0px !important;
     height: 110px !important;
     width: 110px !important;
-}
+} */
 
 .font-size {
     font-size: 22px;
@@ -59,7 +59,7 @@ a {
 }
 
 /* shapes */
-.circle {
+/* .circle {
     height: 105px;
     width: 105px;
     background: orange;
@@ -67,7 +67,7 @@ a {
     position: relative;
     top: 250px;
     
-}
+} */
 
 /* backrgound colors */
 .bg-primary {
@@ -143,12 +143,12 @@ a {
 
 #project-text {
     position: relative;
-    top: 4vh;
+    top: 23vh;
   font-size: 3.5rem;
-  margin: 0 65%;
+  margin: 0 7%;
   left: -4vh;
 }
-.resume_wrapper .circle {
+.resume_wrapper {
     margin: 0 10% ; 
     top: 32vh ;
     left: 5% ; 
@@ -296,17 +296,17 @@ margin: 20px 0px 0px 90px;
 
 #about {
     
-    /* display: flex; */
+display: flex;
     
  
  }
- #about .circle {
+ #about {
     top: -30%;
  }
  #about #about_me_heading_text {
    
     position: relative;
-    top: -15vh;
+    top: -6vh;
     left: 11px;
     font-size: 60px !important;
 
@@ -386,7 +386,7 @@ margin: 20px 0px 0px 90px;
    display: flex;
 
 }
-#project .circle {
+#project {
     position: relative;
    top: 100px;
     left: 5%;
@@ -554,7 +554,7 @@ margin: 20px 0px 0px 90px;
 }
 
 @media (max-width: 700px) {
-    .resume_wrapper #resume_heading_text, .circle {
+    .resume_wrapper #resume_heading_text {
         top: -30px !important;
     }
     #main-nav {
@@ -578,6 +578,12 @@ margin: 20px 0px 0px 90px;
     }
     .socal_medias a {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    #resume1 {
+        margin-left: 0;
     }
 }
 

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    text-decoration: none;
 
 }
 body {
@@ -10,24 +11,28 @@ body {
  
    
 }
+#icon{
+    font-size: 35px;
+    display: none;
+}
 
-a { 
+/* a { 
     color: inherit; 
 
 }
-
+ */
 /* utility classes */
 .container  {
     max-width: 1100px;
     
     
 }
-/* .circle {
+.circle {
     margin-right: 0px !important;
     margin-left: 0px !important;
     height: 110px !important;
     width: 110px !important;
-} */
+}
 
 .font-size {
     font-size: 22px;
@@ -59,7 +64,7 @@ a {
 }
 
 /* shapes */
-/* .circle {
+.circle {
     height: 105px;
     width: 105px;
     background: orange;
@@ -67,7 +72,7 @@ a {
     position: relative;
     top: 250px;
     
-} */
+}
 
 /* backrgound colors */
 .bg-primary {
@@ -118,12 +123,15 @@ a {
 .study {
     margin-top:130px;
 }
+.red{
+    background-color: #007bb5 !important;
+}
 
-.full_screen {
+/* .full_screen {
     min-height: 100vh !important;
     align-items: center;
 
-}
+} */
 .large-heading {
     font-size: 2.5rem;
     margin: 0.75rem;
@@ -143,14 +151,14 @@ a {
 
 #project-text {
     position: relative;
-    top: 23vh;
+    top: 4vh;
   font-size: 3.5rem;
-  margin: 0 7%;
+  margin: 0 65%;
   left: -4vh;
 }
-.resume_wrapper {
+.resume_wrapper .circle {
     margin: 0 10% ; 
-    top: 32vh ;
+    top: 15vh ;
     left: 5% ; 
 }
 #resume_heading_text {
@@ -200,34 +208,88 @@ a {
 .m-6  {
     margin: 6rem;
 }
+.logo-wrapper.aos-init.aos-animate {
+    margin-left: -30px !important;
+}
+#nav-img{
+    padding-left: 0px;
+    height: 40px;
+    display: none;
+}
+#main-nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
-#main-nav {
-    padding: 0rem;
+}
+
+
+
+#main-nav .nav-links {
     color: black;
-    background: white !important;
+    background: white ;
     display: flex;
     justify-content: space-around   ;
-    align-items: center;
     position: sticky;
     top: 0;
     z-index: 2;
     
     
 }
+#tools ul li{
+    font-size: 18px;
+    padding: 10px;
+}
+#main-nav ul li {
+    font-size: 20px;
+}
+
+#btn{
+    display: none;
+}
+/* Resume */
+
+
+.work.aos-init.aos-animate {
+    margin-top: 10px !important;
+}
+/* tools Text */
+.tools{
+    margin: 80px 0;
+    display: flex;
+    justify-content: space-evenly ;
+}
 
 .navSwitchBtn {
     display: none;
 }
+.home{
+    display: flex;
+    align-items: center;
+    color: black !important;
+    font-family: 'Dr Raymond (Display)',monospace;
+}
+.home a{
+    padding: 0 10px;
+    color: black;
+    font-size: 25px;
+}
+.home a img{
+    height: 40px !important;
+    border-radius: 50%;
 
-#main-nav .logo-wrapper .logo {
-    height: 65px;
-    width: 65px;
+}
+
+/* #main-nav .logo-wrapper .logo {
+    height: 45px;
+    width: 45px;
+    margin-top: -12px;
     background: black;
     border-radius: 50%;
     border-bottom: 2px solid ;
     background-image: url("NavPic1.png");
 
-}
+} */
 
 #logo-text{
 margin: 20px 0px 0px 90px;
@@ -243,26 +305,20 @@ margin: 20px 0px 0px 90px;
     margin: 1rem;
 }
 
-#main-nav ul li a {
-    display: block;
-    padding: 0.2rem;
-    background: white;
-    text-decoration: none;
-}
 
 #intro {
     padding: 1rem;
    
 }
-#intro .container {
-    
+h1.large-heading {
+    margin-left: 35px !important;
 }
 #intro .image_and_text {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     gap: 5%;
     height: 100vh;  
+    margin-top: 90px !important;
 
     
 }
@@ -270,11 +326,16 @@ margin: 20px 0px 0px 90px;
     text-align: justify !important;
     width: 50vw;
     margin: 0 10%;
+    font-size: 20px;
+    line-height: 1.6em;
 }
+.image_and_text{display: flex;
+
+    
+}
+
 #intro .image_and_text .image .bottom_border {
     position: relative;
-    top: 10px;
-    border-bottom: 3px solid black;
 
 }
 
@@ -293,20 +354,37 @@ margin: 20px 0px 0px 90px;
 }
 
 /* about  */
+.about-text p{
+    padding: 20px;
+}
+.round p{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 50px;
+}
+.round h1{
+    position: absolute;
+    font-size: 60px;
+    margin-top:15px ;
+    margin-left: 18px;
+
+
+}
 
 #about {
     
-display: flex;
+    display: flex;
     
  
  }
- #about {
+ #about .circle {
     top: -30%;
  }
  #about #about_me_heading_text {
    
     position: relative;
-    top: -6vh;
+    /* top: -15vh; */
     left: 11px;
     font-size: 60px !important;
 
@@ -317,7 +395,7 @@ display: flex;
 }
 
  .resume-text {
-    border: 10px solid black;
+    /* border: 10px solid black; */
     float: left;
     height: 900px;
     width: 50%;
@@ -364,7 +442,7 @@ display: flex;
 
 
 .resume-text {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     float: left;
     height: 750px;
     width: 50%;
@@ -376,22 +454,34 @@ display: flex;
 .t1 {
      text-align: right;
  }
+ div#pr {
+    margin-top: -156px !important;
+}
+#screen{
+    padding: 120px 0;
+}
 
  
 
 /* project section */
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+}
 #projects_wrapper {
-   margin: 10vh 0;
-   padding: 1rem 0;
-   display: flex;
+   margin: 15vh 0;
+   padding: 16rem 0 0 0;
 
 }
-#project {
+#project .circle {
     position: relative;
    top: 100px;
     left: 5%;
 }
 #projects_wrapper .projects {
+    /* margin: 0 15px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -405,11 +495,21 @@ display: flex;
     border: 3px solid black;
     padding: 0.75rem;
     border-radius: 10px;
-    margin: 0 1rem;
-    width: 408px;
+    width: 350px !important;
     height: 291px;
     overflow: hidden;
     
+}
+form  input{
+    border-radius: 10px!important;
+    font-size: 8px;
+}
+#message{
+    border-radius: 10px;
+}
+form button{
+    border-radius: 10px;
+    padding: 10px 30px !important;
 }
 #projects_wrapper .projects .project p {
     overflow: hidden;
@@ -446,8 +546,6 @@ display: flex;
     position: fixed;
     top: 57%;
     left: -100px    ;
-    
-    
     z-index: 4;
     transform: rotate(90deg);
   
@@ -534,7 +632,7 @@ display: flex;
     
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .navSwitchBtn {
         display: block;
     }
@@ -547,28 +645,16 @@ display: flex;
     }
     .work {
         margin: 0;
-    }
+    } 
+}*/
    
 
   
-}
 
-@media (max-width: 700px) {
-    .resume_wrapper #resume_heading_text {
-        top: -30px !important;
-    }
-    #main-nav {
-        flex-direction: column;
-       
-        align-items: flex-start;
-    }
-    #main-nav ul {
-        flex-wrap: wrap;
-    }
-}
+
 @media (max-width: 600px) {
     #intro {
-        margin-top: 23rem;
+        margin-top: 5rem;
     }
     #intro .image_and_text .text {
         font-size: medium;
@@ -578,12 +664,6 @@ display: flex;
     }
     .socal_medias a {
         font-size: 12px;
-    }
-}
-
-@media (max-width: 800px) {
-    #resume1 {
-        margin-left: 0;
     }
 }
 
@@ -603,31 +683,13 @@ display: flex;
         position: relative;
     }
     #resume .work {
-        margin-left: 40% !important;
+        margin-left: 16% !important;
+        flex-wrap: nowrap !;
     }
-
-}
-@media (max-width: 1496px) {
-    #about #about_me_heading_text {
-        position: relative;
-        top: -29vh;
-        left: 15px;
+    #resume div {
+        margin-top: 50px !important;
+        width: 305px !important;
     }
-    #project-text {
-        position: relative;
-        top: 6vh;
-        font-size: 3.5rem;
-        margin: 0px 65%;
-        left: -8vh;
-        font-size: 60px;
-    }
-    .font-size {
-        font-size: 16px ;
-    }
-    #resume_heading_text {
-        left: 11vh;
-    }
-    
 
 }
 

@@ -8,7 +8,7 @@ for(let i=0; i<menu_items.length; i++) {
         setTimeout(() => {
           
            window.scroll(0, window.scrollY)
-        }, 2000);
+        }, 5000);
     })
 }
 
@@ -43,11 +43,12 @@ tools.addEventListener('click', function() {
         window.scroll(0, window.scrollY - 50)
         
     }, 2000);
-})
+});
 
 
 // media queries
 
 
 let mql = window.matchMedia('(max-width: 600px)');
-document.querySelector("body").style.background = "orange !important"
+document.querySelector("body").style.background = "orange !important";
+

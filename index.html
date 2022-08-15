@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kriston Soomai</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="media.css">
     <style>
         .multicolortext {
           background-image: linear-gradient(to left, black, black, black, black, black, yellow, black);
@@ -19,33 +19,41 @@
     <link rel="shortcut icon" type="x-icon" href="NavPic1.png">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav id="main-nav" >
+
     
-    <div class="logo-wrapper" data-aos="zoom-in">
+<nav id="main-nav" >
+    <span  >
+        <img src="/Personal-Port-main/Nav.png" alt="" id="nav-img"></span>
+    <div class="nav-links "  id="nav-links">
+        
+    <div class="logo-wrapper" >
+
         <div class="logo">
             <div id="logo-text">
-            <h1>Soomai.dev</h1>
-            <div class="navSwitchBtn">
-                <i class="fa fa-close"></i>
-            </div>
+                <div class="home" id="">
+                    <a href="#contact"><img src="/Personal-Port-main/NavPic1.png" alt=""></a>
+                    <a href="#contact">Soomai.dev</a>
+                </div>
             </div>
         </div>
     </div>
-    <ul id="menu_items" class="font-size1" data-aos="fade-down">
+    <ul class="" id="ul-links"  >
+        <button id="btn"> <i class="fa-solid fa-circle-xmark"></i></button>
         <li>
             <a href="#intro">
                 Home
             </a>
             </li>
         <li>
-            <a href="#project">
+            <a href="#projects_wrapper">
                 Projects
             </a>
         <li>
-            <a href="#resume_wrapper">
+            <a href="#screen">
                 Resume
             </a> </li>
        
@@ -67,8 +75,10 @@
             </a>
         </li>
     </ul>
+
+    </div>
 </nav>
-<div class="socal_medias" class="m-2 fadein">
+<div class="socal_medias" class="m-2 fadein" id="social-btn">
     <a id="linkedin_social" href="https://www.linkedin.com/in/kriston-soomai-a00bb676/" target="_blank">
         <i class="fa fa-linkedin"></i>
     </a>
@@ -91,14 +101,8 @@
 <section id="intro" class="full_screen">
     <div class="container full_screen">
         <section class="image_and_text">
-            <div class="image" data-aos="fade-left">
-              <img src="profilecolor.jpeg" alt="" height="350px" width="280px">
-                <div class="bottom_border">
-
-                </div>
-            </div>
             <div class="text font-size text-left" data-aos="fade-right">
-                <h1 class="large-heading" style="font-size: 70px;">Hi, I'm <span class="multicolortext">Kriston</span>,</h1>
+                <h1 class="large-heading">Hi, I'm <span class="multicolortext">Kriston</span>,</h1>
                 <p class="m-1 p-1"> a <strong>Web Developer</strong> and <strong>
                             Coding Enthusiast</strong>. 
                 </p><br>
@@ -116,102 +120,112 @@
                 </em>
                 <div class="bottom_border m-2"></div>
             </div>
+            <div class="image" data-aos="fade-left">
+    <img src="profilecolor.jpeg" alt="" height="350px" width="280px" id="dev">
+                  <div class="">
+  
+                  </div>
+              </div>
+  
         </section>      
     </div>
     </section>
-    
-    </section>
-    
-    <section id="project">
-        <!-- <div class="circle"> -->
-            <h1 id="project-text" class="large-heading">Projects</h1>
 
-        <!-- </div> -->
-        <section id="projects_wrapper" class="full_screen ">
-            <div class="projects">
-                    <div class="project" data-aos="fade-down-right">
-                        <h3>Task To Do List</h3>
-                        <div class="buttonWrapper">
-                            <a class="btn" href="https://ronin-io.github.io/To-Do-App/" target="_blank">View Project</a>
-                            <a class="btn" href="https://github.com/Ronin-io/To-Do-App" target="_blank">Source Code</a>
-    
-                        </div>
-                        <img src="todoapp.png" alt="" class="projectimg">
-                    
-                        <p></p>
-                    </div>
-                <div class="project" data-aos="fade-down-left">
-                    <h3>Bookmark Application</h3>
-                    <div class="buttonWrapper">
-                        <a class="btn" href="https://ronin-io.github.io/Bookmark/" target="_blank">View Project</a>
-                        <a class="btn" href="https://github.com/Ronin-io/Bookmark" target="_blank">Source Code</a>
-    
-                    </div>
-                    <img src="bookmark1.png" alt="" class="projectimg">
-                   
-                    <p></p>
-                </div>
-                <div class="project" data-aos="fade-down-right">
-                    <h3>Dad Jokes</h3>
-                    <div class="buttonWrapper">
-                        <a class="btn" href="https://ronin-io.github.io/Dad_Jokes/" target="_blank">View Project</a>
-                        <a class="btn" href="https://github.com/Ronin-io/Dad_Jokes" target="_blank">Source Code</a>
-    
-                    </div>
-                    <img src="dadjoke.png" alt="" class="projectimg">
-                   
-                    <p></p>
-                </div>
-    
-                <div class="project" data-aos="fade-down-left">
-                    <h3>Password Generator</h3>
-                    <div class="buttonWrapper">
-    
-                        <a class="btn" href="https://ronin-io.github.io/Password_Generator/" target="_blank">View Project</a>
-                        <a class="btn" href="https://github.com/Ronin-io/Password_Generator" target="_blank">Source Code</a>
-                    </div>
-                    <img src="password_generator.png" alt="" class="projectimg">
-                   
-                    <p></p>
-                </div>
-                <div class="project" data-aos="fade-down-right">
-                    <h3>JavaScript Counter</h3>
-                    <div class="buttonWrapper">
-    
-                        <a class="btn" href="https://ronin-io.github.io/JavaScript-Counter/" target="_blank">View Project</a>
-                        <a class="btn" href="https://github.com/Ronin-io/JavaScript-Counter" target="_blank">Source Code</a>
-                    </div>
-                    <img src="jscounter.png" alt="" class="projectimg">
-                   
-                    <p></p>
-                </div>
-                <div class="project" data-aos="fade-down-left">
-                    <h3>Quiz Application</h3>
-                    <div class="buttonWrapper">
-    
-                        <a class="btn" href="https://ronin-io.github.io/Quiz-Application/" target="_blank">View Project</a>
-                        <a class="btn" href="https://github.com/Ronin-io/Quiz-Application" target="_blank">Source Code</a>
-                    </div>
-                    <img src="quizapp.png" alt="" class="projectimg">
-                   
-                    <p></p>
-                </div>
-    
-            </div>
-        </section>  
-        </div>
 
-    </section>
-     
-       
-    <section class="resume_wrapper" id="resume_wrapper">
-        <!-- <div class="circle"> -->
-            <h1 id="resume_heading_text">Resume</h1>
 
-        <!-- </div> -->
-        <section id="resume" class="full_screen">
+
+
+
+            <section id="projects_wrapper"  class=" ">
+                <div class="round" style="margin-left: 96px; margin-top: 50px; "id="pr">
+                    <h1 class="large-heading" id="prj">Projects</h1>
+                    <p></p>
             
-            <div class="work" data-aos="fade-down-right">
+                </div>
+        
+                <div class="projects">
+                        <div class="project" data-aos="fade-down-right">
+                            <h3>Task To Do List</h3>
+                            <div class="buttonWrapper">
+                                <a class="btn" href="https://ronin-io.github.io/To-Do-App/" target="_blank">View Project</a>
+                                <a class="btn" href="https://github.com/Ronin-io/To-Do-App" target="_blank">Source Code</a>
+        
+                            </div>
+                            <img src="todoapp.png" alt="" class="projectimg">
+                        
+                        </div>
+                    <div class="project" data-aos="fade-down-left">
+                        <h3>Bookmark Application</h3>
+                        <div class="buttonWrapper">
+                            <a class="btn" href="https://ronin-io.github.io/Bookmark/" target="_blank">View Project</a>
+                            <a class="btn" href="https://github.com/Ronin-io/Bookmark" target="_blank">Source Code</a>
+        
+                        </div>
+                        <img src="bookmark1.png" alt="" class="projectimg">
+                       
+                    </div>
+                    <div class="project" data-aos="fade-down-right">
+                        <h3>Dad Jokes</h3>
+                        <div class="buttonWrapper">
+                            <a class="btn" href="https://ronin-io.github.io/Dad_Jokes/" target="_blank">View Project</a>
+                            <a class="btn" href="https://github.com/Ronin-io/Dad_Jokes" target="_blank">Source Code</a>
+        
+                        </div>
+                        <img src="dadjoke.png" alt="" class="projectimg">
+                       
+                    </div>
+        
+                    <div class="project" data-aos="fade-down-left">
+                        <h3>Password Generator</h3>
+                        <div class="buttonWrapper">
+        
+                            <a class="btn" href="https://ronin-io.github.io/Password_Generator/" target="_blank">View Project</a>
+                            <a class="btn" href="https://github.com/Ronin-io/Password_Generator" target="_blank">Source Code</a>
+                        </div>
+                        <img src="password_generator.png" alt="" class="projectimg">
+                       
+                    </div>
+                    <div class="project" data-aos="fade-down-right">
+                        <h3>JavaScript Counter</h3>
+                        <div class="buttonWrapper">
+        
+                            <a class="btn" href="https://ronin-io.github.io/JavaScript-Counter/" target="_blank">View Project</a>
+                            <a class="btn" href="https://github.com/Ronin-io/JavaScript-Counter" target="_blank">Source Code</a>
+                        </div>
+                        <img src="jscounter.png" alt="" class="projectimg">
+                       
+                    </div>
+                    <div class="project" data-aos="fade-down-left">
+                        <h3>Quiz Application</h3>
+                        <div class="buttonWrapper">
+        
+                            <a class="btn" href="https://ronin-io.github.io/Quiz-Application/" target="_blank">View Project</a>
+                            <a class="btn" href="https://github.com/Ronin-io/Quiz-Application" target="_blank">Source Code</a>
+                        </div>
+                        <img src="quizapp.png" alt="" class="projectimg">
+                       
+                    </div>
+        
+                </div>
+            </section>  
+    
+    
+
+
+
+
+
+       
+        <section class="screen" id="screen" >
+            <div class="round" style="margin-left:96px; margin-bottom: -10px;" id="rsm" >
+                <h1  style="margin-left:25px ;" id="">Resume</h1>
+                <p></p>
+            
+            </div>
+
+            <div id="resume">
+                <div class="work" data-aos="fade-down-right">
+        
                 
                 
                 
@@ -242,14 +256,18 @@
                         <li>2011 - 2012</li>
                     </ul>
             </div>
+
+            </div>
+
+            
+            
           </section>
-    
-          <section id="resume1" class="full_screen">
-            <div class="container" id="tools">
-                
-    
-                    <section class="resume-text" data-aos="fade-down-right">
-    
+        </section>   
+        
+        
+<section  class="tools" id="tools" style="padding: 80px 0; " >
+                    <div class="" data-aos="fade-down-right">
+
                         <h2 class="font-size2 font-family1">Skills</h2>
                         <br>
                         <h1 class="font-size1">Design</h1>
@@ -264,8 +282,8 @@
                             <li>Wireframing</li>
                             <br>                     
                         </ul>
-    
-                        <br><br><br>
+                    </div>
+                    <div  data-aos="fade-down-left">
                         <h2 class="font-size2 font-family1">Tools</h2>
                         <br>
                         <ul class="bullet-points font-size0">
@@ -281,10 +299,10 @@
                             <br>
                             <li>Final Cut Pro</li>
                         </ul>
-                        
     
-                    </section>
-                    <section class="resume-text t1"  data-aos="fade-down-left">
+    
+                    </div>
+                    <div   data-aos="fade-down-right">
     
                         <h2 class="font-size2 font-family1">Online Courses</h2>
                         <br>
@@ -303,53 +321,62 @@
                                <em><li>January 2022 - March 2022</li></em>
                         </ul>
     
-                    </section>
-            </section>
+                    </div>
+    
 
-    </section>    
+
+    
+                        
+    
+                    </div>
+
+
+
+        </section>
+
+
 
                
-        <section id="about" class="full_screen">
-            <div class="container full_screen">
-                    </div>
-                    
+        <section  class="" id="about" style="margin-top:400px !important ;">
                     <div class="text font-size m-6">
-                        <!-- <div class="circle"></div> -->
-                        <h1 id="about_me_heading_text" class="large-heading" style="font-size: 70px;"
-                        >About Me</h1>
-                        <br><br>
-                        <p class="font-size-1" data-aos="fade-right"><strong>Who am I?</strong>
-                        </p><br><br>
-                        <p data-aos="fade-right">My name is <span class="multicolortext"><strong>Kriston Soomai</strong></span>, and I am a Web Application Developer based in NY.
-                        I have a backround in Front-End Development.</p>
-                        <br><br><br><br><br>
-                        <p class="font-size-1" data-aos="fade-right"><strong>What do I do?</strong>
-                        </p><br><br>
-                        <p data-aos="fade-right">I create interfaces that are user friendly, functional, accessible and easy to navigate.
-                        With my Front-End expertise i understand the technicalities that come with this ever growing field.</p>
-                        <br><br><br><br><br>
-                        <p class="font-size-1"><strong>What am I passionate about?</strong> 
-                        </p><br><br>
-                        <p>I believe that web development is the key to allowing more people to get in touch with their <strong>✨creative 
-                        abilities 🧠 ✨</strong> and free them from their typical unfufilling work schedules this will allow people to take their lives into
-                        their own hands.</p>
-                        <br><br>
-                        <br><br>
-                        <p class="font-size-1"><strong>Okay, what else?</strong>
-                        </p><br>
-                        I love dogs🐕, photography📷 , and martial arts🥋.
-                        <br><br>
-                
+                        <div class="round">
+                            <h1 id="abt"
+                            >About Me</h1>
+                            <p></p>
+
+                        </div>
+                        <div class="about-text">
+                            <p class="font-size-1" data-aos="fade-right"><strong>Who am I?</strong>
+                            </p>
+                            <p data-aos="fade-right">My name is <span class="multicolortext"><strong>Kriston Soomai</strong></span>, and I am a Web Application Developer based in NY.
+                            I have a backround in Front-End Development.</p>
+                            <br>
+                            <p class="font-size-1" data-aos="fade-right"><strong>What do I do?</strong>
+                            </p>
+                            <p data-aos="fade-right">I create interfaces that are user friendly, functional, accessible and easy to navigate.
+                            With my Front-End expertise i understand the technicalities that come with this ever growing field.</p>
+                            
+                            <p class="font-size-1" data-aos="fade-right"><strong>What am I passionate about?</strong> 
+                            </p>
+                            <p  data-aos="fade-right" >I believe that web development is the key to allowing more people to get in touch with their <strong>✨creative 
+                            abilities 🧠 ✨</strong> and free them from their typical unfufilling work schedules this will allow people to take their lives into
+                            their own hands.</p>
+                            
+                            <p class="font-size-1"data-aos="fade-right" ><strong>Okay, what else?</strong>
+                            </p>
+                            <p data-aos="fade-right">
+                                I love dogs🐕, photography📷 , and martial arts🥋.
+                            </p>
+
+                        </div>
+
                         <div class="bottom_border m-2"></div>
                     </div>
                 </section>      
-            </div>
-        </section>
-    </section>
 
 
     <section id="contact" class="full_screen">
-        <form action="">
+        <form action="" style="border-radius:10px ; padding: 20px 50px;">
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName">
             <label for="email" >Email</label>
@@ -428,6 +455,30 @@
 });
 </script>
 <script src="./index.js"></script>
+<script>
+     var toggle = document.getElementById('nav-img');
+ toggle.addEventListener("click", function(){
+    var social = document.getElementById('social-btn');
+    var change =document.getElementById("nav-links");
+    change.style.marginLeft="0";
+    change.style.transition='1s';
+    social.style.opacity="0";
+
+ })
+ var utoggle = document.getElementById('btn');
+ utoggle.addEventListener("click", function(){
+    var social = document.getElementById('social-btn');
+    var change =document.getElementById("nav-links");
+    change.style.marginLeft="-2100px";
+    setTimeout(() => {
+        social.style.opacity="1";
+
+        
+    }, 1000);
+
+ });
+
+</script>
 
 </body>
 </html>

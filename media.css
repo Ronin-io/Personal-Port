@@ -1,0 +1,288 @@
+@media (max-width: 1496px) {
+    #about #about_me_heading_text {
+        position: relative;
+        /* top: -29vh; */
+        left: 15px;
+    }
+    h1.large-heading {
+        font-size: 62px ;
+    }
+
+    #project-text {
+        position: relative;
+        top: 6vh;
+        font-size: 3.5rem;
+        margin: 0px 65%;
+        left: -8vh;
+        font-size: 60px;
+    }
+    .font-size {
+        font-size: 16px ;
+    }
+    #resume_heading_text {
+        left: 11vh;
+    }
+    
+
+}
+@media(max-width:1024px){
+    h1.large-heading {
+        font-size: 55px ;
+    }
+}
+
+
+@media(max-width:990px){
+     #projects_wrapper{
+        margin: 25vh 0 !important;
+     }
+    
+
+#intro .image_and_text .text {
+    width: 90% !important ;
+
+}
+.image_and_text{
+    flex-direction: column;
+    
+}
+#nav-links{
+    margin-left: -2100px;
+
+    
+}
+#resume .work {
+    flex-wrap: nowrap !important;
+    margin-left: 16% !important;
+}
+.study.aos-init.aos-animate {
+    margin: 0 0 0 25% !important;
+}
+#contact {
+    padding: 6rem !important;
+    border-radius: 10px !important;
+}
+.tools{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#nav-img{
+
+cursor: pointer;
+}
+#main-nav ul li a{
+    background-color: rgb(225, 192, 192) !important;
+
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+#btn{
+    display: block !important;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(225, 192, 192) !important;
+    border: none;
+    margin-top: -140px;
+    cursor: pointer;
+    padding-left: 38px;
+
+
+
+    background-color: rgb(15, 16, 17);
+}
+
+
+#icon{
+    font-size: 35px;
+    display: block !important;
+    color: black !important;
+}
+
+
+/* Nav button change */
+
+
+#ul-links{
+    padding-left: 100px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: rgb(225, 192, 192);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+
+#main-nav .logo-wrapper .logo {
+    display: none;
+
+}
+#nav-img{
+    position: fixed;
+    display: block !important;
+    margin-left: 60px;
+    margin-top: 40px;
+}
+#project{
+    margin-top: 300px !important;
+}
+
+
+
+}
+@media (max-width: 700px) {
+    .resume_wrapper #resume_heading_text, .circle {
+        top: -30px !important;
+    }
+    h1.large-heading {
+        font-size: 60px ;
+    }
+    #intro .image_and_text .text {
+        font-size: 16px !important;
+    }
+    .text.font-size.text-left.aos-init.aos-animate {
+        padding-left: 50px;
+    }
+    .round p{
+        height: 70px !important;
+        width: 70px !important;
+    }
+    .round h1{
+        font-size: 42px !important;
+        margin-top:9px !important;
+        margin-left: 20px !important;
+    
+    
+    }
+    
+#prj{
+    margin-left: 23px !important;
+}
+#rsm{
+    margin-left:70px !important ;
+}
+#abt{
+    margin-left: 14px !important;
+}
+    
+
+    #main-nav {
+        flex-direction: column;
+       
+        align-items: flex-start;
+    }
+    #main-nav ul {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:500px) {
+    .socal_medias a {
+        font-size: 22px;
+    }
+    #prj {
+        margin-left: 30px !important;
+
+    }
+        
+    #intro{
+        margin:  0 10px ;
+    }
+    h1.large-heading {
+        font-size: 32px;
+        margin-left: -10px;
+    }
+    .image{
+        margin-right: 40px;
+    }
+    #dev{
+        height: 260px;
+        width: 200px;
+    }
+    #rsm {
+        margin-left: 70px !important;
+
+    }
+        
+    #projects_wrapper .projects .project{
+        height: 400px !important;
+        width: 100px !important;
+    }
+    .projects{
+        margin: 50px 40px !important;
+        justify-content: center;
+    }
+    #main-nav{
+        background-color: red !important;
+    }
+    #main-nav ul{
+        height: 100%;
+    }
+    .work.aos-init.aos-animate{
+        margin-right: 60px !important;
+        padding-bottom: 20px !important;
+    }
+    .study.aos-init.aos-animate {
+        margin: 0 46px 0 25% !important;
+    }
+    .text.font-size.m-6 {
+        font-size: 15px;
+    }
+    p.font-size-1.aos-init.aos-animate{
+        font-size: 30px !important;
+    }
+    h2.font-size2.font-family1{
+        font-size: 35px !important;
+    }
+    .text.font-size.m-6 {
+        margin: 50px !important;
+    }
+    label {
+        border-radius: 10px;
+    }
+    button.btn {
+        border-radius: 10px;
+        padding: .8em !important;
+    }
+    #main-nav ul li a{
+    
+        font-size: 40px !important; 
+    }
+    #resume{
+        min-width: 300px !important;
+        overflow: hidden;
+    }
+    #main-nav ul  i{
+        font-size: 35px  !important;
+        margin-top: 40px;
+    }
+    #main-nav{
+        position: relative !important;
+    }
+    #btn{
+        font-size: 30px;
+        margin-top: -200px;
+        padding-left: 30px;
+    
+    
+    
+        background-color: rgb(15, 16, 17);
+    }
+    #ul-links{
+        width: 100%;
+    }
+    
+    
+    
+}
+@media (max-width:350px) {
+    h1.large-heading{
+        font-size: 24px;
+    }
+}
+
+
